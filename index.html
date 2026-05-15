@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angel Create Modes | Premium Portfolio Design</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- External CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Starfield Canvas Background -->
+  <canvas id="starfield"></canvas>
+
+  <!-- NAV BAR -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <div class="logo-shield">
+        <svg viewBox="0 0 80 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="shieldGrad" x1="0" y1="0" x2="80" y2="92" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#F0D080"/>
+              <stop offset="50%" stop-color="#C9A84C"/>
+              <stop offset="100%" stop-color="#8B6914"/>
+            </linearGradient>
+            <linearGradient id="shieldInner" x1="0" y1="0" x2="80" y2="92" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#0A1628"/>
+              <stop offset="100%" stop-color="#050D1A"/>
+            </linearGradient>
+          </defs>
+          <path d="M40 2 L76 16 L76 52 Q76 78 40 90 Q4 78 4 52 L4 16 Z" fill="url(#shieldGrad)"/>
+          <path d="M40 8 L70 20 L70 52 Q70 74 40 84 Q10 74 10 52 L10 20 Z" fill="url(#shieldInner)"/>
+          <text x="40" y="56" text-anchor="middle" font-family="Cinzel Decorative" font-weight="900" font-size="26" fill="url(#shieldGrad)">AC</text>
+          <circle cx="40" cy="14" r="3" fill="url(#shieldGrad)" opacity="0.8"/>
+          <line x1="16" y1="30" x2="22" y2="30" stroke="url(#shieldGrad)" stroke-width="1" opacity="0.5"/>
+          <line x1="58" y1="30" x2="64" y2="30" stroke="url(#shieldGrad)" stroke-width="1" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-brand">Angel Create</span>
+        <span class="logo-sub">Modes</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#logo">Our Brand</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://instagram.com/_insta_angel._official" target="_blank" class="nav-cta">DM Us</a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Premium Digital Portfolio Design</div>
+      <h1 class="hero-title">Angel<br>Create<br>Modes</h1>
+      <div class="hero-divider">
+        <div class="hero-divider-line"></div>
+        <div class="hero-divider-diamond"></div>
+        <div class="hero-divider-line"></div>
+      </div>
+      <p class="hero-subtitle">
+        Your Portfolio. Their First Impression.<br>
+        Stop being an unknown. Start being a <strong>Brand.</strong>
+      </p>
+      <div class="hero-ctas">
+        <a href="https://instagram.com/_insta_angel._official" target="_blank" class="btn-primary">DM For Free Consultation</a>
+        <a href="#services" class="btn-secondary">Explore Services</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="scroll-text">Discover</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MAIN WRAPPER -->
+  <div style="position:relative; z-index:1; background: var(--navy);">
+    
+    <!-- SERVICES SECTION -->
+    <section class="section" id="services">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">What We Create</span>
+        <h2 class="section-title">Our Signature Services</h2>
+        <div class="section-rule">
+          <div class="rule-line"></div>
+          <div class="rule-gem"></div>
+          <div class="rule-line right"></div>
+        </div>
+      </div>
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <div class="service-number">01</div>
+          <div class="service-icon-wrap"><span class="service-icon">💄</span></div>
+          <h3 class="service-name">Creative Portfolios</h3>
+          <p class="service-tagline">Makeup Artists & Digital Edits</p>
+          <p class="service-desc">Stunning visual showcases tailored for artists and creators. We craft immersive, gallery-quality portfolio sites that make your artistry unforgettable online.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-number">02</div>
+          <div class="service-icon-wrap"><span class="service-icon">🎓</span></div>
+          <h3 class="service-name">Student Portfolios</h3>
+          <p class="service-tagline">Stand Out to Recruiters</p>
+          <p class="service-desc">Premium academic and professional portfolios designed to make recruiters stop scrolling. Your skills, elevated to a brand that gets you hired.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-number">03</div>
+          <div class="service-icon-wrap"><span class="service-icon">💼</span></div>
+          <h3 class="service-name">Professional Resume Sites</h3>
+          <p class="service-tagline">The Digital Edge You Need</p>
+          <p class="service-desc">Interactive resume websites that go beyond PDF. Dynamic, searchable, shareable — your career story told with precision and elegance.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-number">04</div>
+          <div class="service-icon-wrap"><span class="service-icon">🏪</span></div>
+          <h3 class="service-name">Small Business Pages</h3>
+          <p class="service-tagline">Attract Local Clients</p>
+          <p class="service-desc">High-converting business landing pages crafted to pull in local customers. Professional presence that builds trust and drives real inquiries.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US SECTION -->
+    <section class="why-section" id="why">
+      <div class="section" style="padding-top: 120px; padding-bottom: 80px;">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Our Promise</span>
+          <h2 class="section-title">Why Angel Create Modes</h2>
+          <div class="section-rule">
+            <div class="rule-line"></div>
+            <div class="rule-gem"></div>
+            <div class="rule-line right"></div>
+          </div>
+        </div>
+        <div class="pillars-grid reveal">
+          <div class="pillar">
+            <span class="pillar-icon">💡</span>
+            <h3 class="pillar-title">Creative Designs</h3>
+            <p class="pillar-desc">Every design is a bespoke creation. No templates, no shortcuts — pure originality crafted for your unique vision.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">👤</span>
+            <h3 class="pillar-title">Personalized For You</h3>
+            <p class="pillar-desc">We learn your story, your goals, your aesthetic. Then we build something that feels unmistakably, perfectly yours.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">⚡</span>
+            <h3 class="pillar-title">On-Time Delivery</h3>
+            <p class="pillar-desc">Premium quality, quick turnaround. We respect your timeline as much as we respect your brand.</p>
+          </div>
+        </div>
+        
+        <!-- Checklist Features -->
+        <div style="margin-top: 60px;">
+          <div class="features-list reveal">
+            <div class="feature-item">
+              <div class="feature-check">✓</div>
+              <div class="feature-text">
+                <strong>Proven Results</strong>
+                <span>Portfolios that get you seen, remembered, and hired.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check">✓</div>
+              <div class="feature-text">
+                <strong>Unique, Custom Designs</strong>
+                <span>No generic templates. Every pixel crafted with intention.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check">✓</div>
+              <div class="feature-text">
+                <strong>Affordable & Fast</strong>
+                <span>Premium look and feel, without the premium wait or price.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check">✓</div>
+              <div class="feature-text">
+                <strong>Satisfaction Guaranteed</strong>
+                <span>We don't stop until you love what you see. Your vision, perfected.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRAND ID / LOGO SHOWCASE -->
+    <section class="logo-showcase" id="logo">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Our Identity</span>
+        <h2 class="section-title">The Angel Create Brand</h2>
+        <div class="section-rule">
+          <div class="rule-line"></div>
+          <div class="rule-gem"></div>
+          <div class="rule-line right"></div>
+        </div>
+      </div>
+      <div class="logo-3d-wrap reveal">
+        <div class="logo-glow-ring"></div>
+        <div class="logo-glow-ring logo-glow-ring-2"></div>
+        <svg class="logo-3d" viewBox="0 0 200 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bigShieldGrad" x1="0" y1="0" x2="200" y2="230" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#F0D080"/>
+              <stop offset="40%" stop-color="#C9A84C"/>
+              <stop offset="70%" stop-color="#E8C060"/>
+              <stop offset="100%" stop-color="#8B6914"/>
+            </linearGradient>
+            <linearGradient id="bigInner" x1="0" y1="0" x2="200" y2="230" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#0F2040"/>
+              <stop offset="100%" stop-color="#050D1A"/>
+            </linearGradient>
+            <linearGradient id="letterGrad" x1="0" y1="0" x2="200" y2="230" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#F0D080"/>
+              <stop offset="50%" stop-color="#C9A84C"/>
+              <stop offset="100%" stop-color="#F0D080"/>
+            </linearGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+              <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <path d="M100 4 L192 38 L192 126 Q192 192 100 224 Q8 192 8 126 L8 38 Z" fill="url(#bigShieldGrad)" filter="url(#glow)"/>
+          <path d="M100 16 L178 46 L178 126 Q178 180 100 210 Q22 180 22 126 L22 46 Z" fill="url(#bigInner)"/>
+          <path d="M100 26 L168 54 L168 126 Q168 172 100 200 Q32 172 32 126 L32 54 Z" fill="none" stroke="url(#bigShieldGrad)" stroke-width="0.8" opacity="0.4"/>
+          <text x="100" y="138" text-anchor="middle" font-family="Cinzel Decorative, serif" font-weight="900" font-size="64" fill="url(#letterGrad)" filter="url(#glow)">AC</text>
+          <circle cx="100" cy="36" r="6" fill="url(#bigShieldGrad)" opacity="0.9" filter="url(#glow)"/>
+          <line x1="68" y1="36" x2="88" y2="36" stroke="url(#bigShieldGrad)" stroke-width="1.5" opacity="0.5"/>
+          <line x1="112" y1="36" x2="132" y2="36" stroke="url(#bigShieldGrad)" stroke-width="1.5" opacity="0.5"/>
+          <text x="100" y="175" text-anchor="middle" font-family="Rajdhani, sans-serif" font-weight="300" font-size="11" fill="url(#bigShieldGrad)" letter-spacing="8" opacity="0.7">MODES</text>
+          <rect x="54" y="84" width="8" height="8" transform="rotate(45 58 88)" fill="url(#bigShieldGrad)" opacity="0.5"/>
+          <rect x="138" y="84" width="8" height="8" transform="rotate(45 142 88)" fill="url(#bigShieldGrad)" opacity="0.5"/>
+        </svg>
+      </div>
+      <p class="hero-subtitle reveal" style="max-width: 500px; margin: 0 auto 20px;">
+        A shield of <strong>excellence</strong>. A crest of <strong>creativity</strong>.<br>Built to command attention.
+      </p>
+    </section>
+
+    <!-- CALL TO ACTION (CTA) -->
+    <section class="cta-section" id="contact">
+      <div class="cta-bg"></div>
+      <div class="cta-border-top"></div>
+      <div class="cta-border-bottom"></div>
+      <div class="cta-eyebrow reveal">Ready to Become a Brand?</div>
+      <h2 class="cta-headline reveal">Let's Discuss<br>Your Vision.</h2>
+      <p class="cta-sub reveal">DM us on Instagram for a <strong>Free Consultation.</strong><br>Take the leap.</p>
+      <div class="reveal">
+        <a href="https://instagram.com/_insta_angel._official" target="_blank" class="btn-primary" style="font-size: 15px; padding: 20px 60px; display: inline-block;">
+          DM For A Free Consultation
+        </a>
+      </div>
+      <div class="reveal">
+        <a href="https://instagram.com/_insta_angel._official" target="_blank" class="social-badge">
+          <span>📷</span> @_insta_angel._official
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 <span>Angel Create Modes</span> — All Rights Reserved &nbsp;|&nbsp; Premium Portfolio Design</p>
+    </footer>
+  </div>
+
+  <!-- JAVASCRIPT CODE -->
+  <script>
+    // --- CURSOR LOGIC ---
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX; mouseY = e.clientY;
+      cursor.style.left = mouseX - 6 + 'px';
+      cursor.style.top = mouseY - 6 + 'px';
+    });
+
+    function animateRing() {
+      ringX += (mouseX - ringX - 20) * 0.15;
+      ringY += (mouseY - ringY - 20) * 0.15;
+      ring.style.left = ringX + 'px';
+      ring.style.top = ringY + 'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+
+    // --- CANVAS STARFIELD EFFECT ---
+    const canvas = document.getElementById('starfield');
+    const ctx = canvas.getContext('2d');
+    let W, H, stars = [];
+
+    function resize() {
+      W = canvas.width = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    function initStars() {
+      stars = [];
+      for (let i = 0; i < 150; i++) {
+        stars.push({
+          x: Math.random() * W,
+          y: Math.random() * H,
+          size: Math.random() * 1.5,
+          speed: Math.random() * 0.5 + 0.1
+        });
+      }
+    }
+    initStars();
+
+    function drawStars() {
+      ctx.clearRect(0, 0, W, H);
+      ctx.fillStyle = '#C9A84C';
+      stars.forEach(s => {
+        ctx.globalAlpha = Math.random() * 0.5 + 0.3; // Twinkle effect
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+        ctx.fill();
+        s.y -= s.speed;
+        if (s.y < 0) s.y = H;
+      });
+      requestAnimationFrame(drawStars);
+    }
+    drawStars();
+
+    // --- SCROLL REVEAL ACTIVATION ---
+    const observerOptions = { threshold: 0.15 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // --- HOVER ANIMS FOR LINKS/CARDS ---
+    document.querySelectorAll('a, button, .service-card, .pillar, .feature-item').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.transform = 'scale(2.5)';
+        ring.style.transform = 'scale(1.5)';
+        ring.style.borderColor = '#F0D080';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.transform = 'scale(1)';
+        ring.style.transform = 'scale(1)';
+        ring.style.borderColor = '#C9A84C';
+      });
+    });
+  </script>
+</body>
+</html>
